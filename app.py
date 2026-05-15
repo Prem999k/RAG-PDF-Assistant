@@ -12,6 +12,9 @@ from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()
 
+os.environ["MISTRAL_API_KEY"] = st.secrets["MISTRAL_API_KEY"]
+
+
 # Streamlit Page Config
 st.set_page_config(page_title="RAG Book Assistant")
 
