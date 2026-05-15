@@ -14,7 +14,6 @@ load_dotenv()
 
 os.environ["MISTRAL_API_KEY"] = st.secrets["MISTRAL_API_KEY"]
 
-
 # Streamlit Page Config
 st.set_page_config(page_title="RAG Book Assistant")
 
@@ -54,8 +53,8 @@ if uploaded_file:
 
             # Split Text
             splitter = RecursiveCharacterTextSplitter(
-                chunk_size=1000,
-                chunk_overlap=200
+                chunk_size=1500,
+                chunk_overlap=300
             )
 
             chunks = splitter.split_documents(docs)
@@ -80,27 +79,38 @@ if "vectorstore" in st.session_state:
     retriever = vectorstore.as_retriever(
         search_type="mmr",
         search_kwargs={
-            "k": 4,
-            "fetch_k": 10,
+            "k": 6,
+            "fetch_k": 15,
             "lambda_mult": 0.5
         }
     )
 
     # Mistral LLM
     llm = ChatMistralAI(
-        model="mistral-small-latest"
+        model="mistral-small",
+        temperature=0.3,
+        max_tokens=500
     )
 
     # Prompt Template
     prompt = ChatPromptTemplate.from_messages([
         (
             "system",
-            """You are a helpful AI assistant.
+            """You are an intelligent AI assistant.
 
-Use ONLY the provided context to answer the question.
+Answer the user's question using ONLY the provided context.
+
+Provide:
+- clear explanations
+- detailed answers
+- important points
+- examples if available in context
 
 If the answer is not present in the context,
-say: "I could not find the answer in the document."
+say:
+'I could not find the answer in the document.'
+
+Do not make up information.
 """
         ),
 
