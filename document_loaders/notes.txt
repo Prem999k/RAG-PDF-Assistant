@@ -1,0 +1,351 @@
+CORRELATION VS COVARIANCE — STATISTICS NOTES
+
+---------------------------------------------------
+1. COVARIANCE
+---------------------------------------------------
+
+Definition:
+Covariance measures how two variables change together.
+
+- Positive covariance:
+  Both variables increase or decrease together.
+
+- Negative covariance:
+  One variable increases while the other decreases.
+
+---------------------------------------------------
+FORMULA
+---------------------------------------------------
+
+Population Covariance:
+
+Cov(X,Y) = Σ[(Xi - μx)(Yi - μy)] / N
+
+Sample Covariance:
+
+Cov(X,Y) = Σ[(Xi - X̄)(Yi - Ȳ)] / (n - 1)
+
+---------------------------------------------------
+INTERPRETATION
+---------------------------------------------------
+
+Positive Covariance  -> Variables move together
+Negative Covariance  -> Variables move opposite
+Zero Covariance      -> No linear relationship
+
+---------------------------------------------------
+EXAMPLE
+---------------------------------------------------
+
+Hours Studied : 1  2  3
+Marks          : 40 50 60
+
+As study hours increase, marks increase.
+
+=> Positive Covariance
+
+===================================================
+
+
+---------------------------------------------------
+2. CORRELATION
+---------------------------------------------------
+
+Definition:
+Correlation measures both:
+
+1. Strength
+2. Direction
+
+of the relationship between two variables.
+
+Correlation is the standardized version of covariance.
+
+---------------------------------------------------
+FORMULA
+---------------------------------------------------
+
+r = Cov(X,Y) / (σx × σy)
+
+---------------------------------------------------
+CORRELATION RANGE
+---------------------------------------------------
+
+-1 <= r <= 1
+
+r = +1  -> Perfect positive correlation
+r = 0   -> No correlation
+r = -1  -> Perfect negative correlation
+
+---------------------------------------------------
+EXAMPLE
+---------------------------------------------------
+
+Temperature ↑  -> Ice Cream Sales ↑
+
+=> Strong Positive Correlation
+
+===================================================
+
+
+---------------------------------------------------
+DIFFERENCE BETWEEN COVARIANCE AND CORRELATION
+---------------------------------------------------
+
+Feature                 Covariance          Correlation
+---------------------------------------------------------------
+Measures                Direction           Strength + Direction
+Range                   Any value           -1 to +1
+Unit dependent          Yes                 No
+Easy to interpret       No                  Yes
+Standardized            No                  Yes
+
+===================================================
+
+
+---------------------------------------------------
+REAL-LIFE ANALOGY
+---------------------------------------------------
+
+Covariance:
+Two friends walking in the same direction.
+
+Correlation:
+Shows both direction and how strongly connected
+the friends are.
+
+===================================================
+
+
+---------------------------------------------------
+IMPORTANT POINTS
+---------------------------------------------------
+
+Covariance:
+- Scale dependent
+- Hard to compare datasets
+
+Correlation:
+- Normalized
+- Widely used in Machine Learning and Data Science
+
+===================================================
+
+
+---------------------------------------------------
+APPLICATIONS IN MACHINE LEARNING
+---------------------------------------------------
+
+Correlation helps in:
+
+- Feature selection
+- Removing highly correlated features
+- Finding relationships between variables
+
+Examples:
+- House size vs price
+- Age vs salary
+
+===================================================
+
+
+---------------------------------------------------
+QUICK SUMMARY
+---------------------------------------------------
+
+Topic                Covariance        Correlation
+-----------------------------------------------------------
+Direction             Yes              Yes
+Strength              No               Yes
+Standardized          No               Yes
+Fixed Range           No               Yes
+
+===================================================
+
+
+---------------------------------------------------
+INTERVIEW ANSWER
+---------------------------------------------------
+
+Covariance:
+Measures how two variables vary together.
+
+Correlation:
+Measures both strength and direction of the
+relationship between variables.
+It is normalized covariance.CORRELATION VS COVARIANCE — STATISTICS NOTES
+
+---------------------------------------------------
+1. COVARIANCE
+---------------------------------------------------
+
+Definition:
+Covariance measures how two variables change together.
+
+- Positive covariance:
+  Both variables increase or decrease together.
+
+- Negative covariance:
+  One variable increases while the other decreases.
+
+---------------------------------------------------
+FORMULA
+---------------------------------------------------
+
+Population Covariance:
+
+Cov(X,Y) = Σ[(Xi - μx)(Yi - μy)] / N
+
+Sample Covariance:
+
+Cov(X,Y) = Σ[(Xi - X̄)(Yi - Ȳ)] / (n - 1)
+
+---------------------------------------------------
+INTERPRETATION
+---------------------------------------------------
+
+Positive Covariance  -> Variables move together
+Negative Covariance  -> Variables move opposite
+Zero Covariance      -> No linear relationship
+
+---------------------------------------------------
+EXAMPLE
+---------------------------------------------------
+
+Hours Studied : 1  2  3
+Marks          : 40 50 60
+
+As study hours increase, marks increase.
+
+=> Positive Covariance
+
+===================================================
+
+
+---------------------------------------------------
+2. CORRELATION
+---------------------------------------------------
+
+Definition:
+Correlation measures both:
+
+1. Strength
+2. Direction
+
+of the relationship between two variables.
+
+Correlation is the standardized version of covariance.
+
+---------------------------------------------------
+FORMULA
+---------------------------------------------------
+
+r = Cov(X,Y) / (σx × σy)
+
+---------------------------------------------------
+CORRELATION RANGE
+---------------------------------------------------
+
+-1 <= r <= 1
+
+r = +1  -> Perfect positive correlation
+r = 0   -> No correlation
+r = -1  -> Perfect negative correlation
+
+---------------------------------------------------
+EXAMPLE
+---------------------------------------------------
+
+Temperature ↑  -> Ice Cream Sales ↑
+
+=> Strong Positive Correlation
+
+===================================================
+
+
+---------------------------------------------------
+DIFFERENCE BETWEEN COVARIANCE AND CORRELATION
+---------------------------------------------------
+
+Feature                 Covariance          Correlation
+---------------------------------------------------------------
+Measures                Direction           Strength + Direction
+Range                   Any value           -1 to +1
+Unit dependent          Yes                 No
+Easy to interpret       No                  Yes
+Standardized            No                  Yes
+
+===================================================
+
+
+---------------------------------------------------
+REAL-LIFE ANALOGY
+---------------------------------------------------
+
+Covariance:
+Two friends walking in the same direction.
+
+Correlation:
+Shows both direction and how strongly connected
+the friends are.
+
+===================================================
+
+
+---------------------------------------------------
+IMPORTANT POINTS
+---------------------------------------------------
+
+Covariance:
+- Scale dependent
+- Hard to compare datasets
+
+Correlation:
+- Normalized
+- Widely used in Machine Learning and Data Science
+
+===================================================
+
+
+---------------------------------------------------
+APPLICATIONS IN MACHINE LEARNING
+---------------------------------------------------
+
+Correlation helps in:
+
+- Feature selection
+- Removing highly correlated features
+- Finding relationships between variables
+
+Examples:
+- House size vs price
+- Age vs salary
+
+===================================================
+
+
+---------------------------------------------------
+QUICK SUMMARY
+---------------------------------------------------
+
+Topic                Covariance        Correlation
+-----------------------------------------------------------
+Direction             Yes              Yes
+Strength              No               Yes
+Standardized          No               Yes
+Fixed Range           No               Yes
+
+===================================================
+
+
+---------------------------------------------------
+INTERVIEW ANSWER
+---------------------------------------------------
+
+Covariance:
+Measures how two variables vary together.
+
+Correlation:
+Measures both strength and direction of the
+relationship between variables.
+It is normalized covariance.
